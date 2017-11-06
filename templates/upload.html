@@ -1,0 +1,75 @@
+{% extends "bootstrap/base.html" %}
+{% block title %}This is an example page{% endblock %}
+
+{% block navbar %}
+<div class="navbar navbar-fixed-top">
+
+</div>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+      <div class="row main">
+        <div class="panel-heading">
+          <div class="panel-title text-center">
+            <h1 class="title">Upload Form</h1>
+            <hr />
+          </div>
+        </div>
+        <div class="main-login main-center">
+          <form method="post" enctype=multipart/form-data action="uploadTo">
+            <label for="url" class="cols-sm-2 control-label">Tableau Server URL</label>
+            <div class="cols-sm-10">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                <input type="text" class="form-control" name=url id="url"  placeholder="Enter Server URL"/>
+              </div>
+            </div>
+
+            <label for="username" class="cols-sm-2 control-label">Tableau Username</label>
+            <div class="cols-sm-10">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                <input type="text" class="form-control" name=username id="username"  required placeholder="Enter Tableau Server Username"/>
+              </div>
+            </div>
+
+            <label for="password" class="cols-sm-2 control-label">Password</label>
+            <div class="cols-sm-10">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                <input type="password" class="form-control" name=password id="password" required  placeholder="Enter your Password"/>
+              </div>
+            </div>
+
+            <label for="file" class="cols-sm-2 control-label">Browse the upload file</label>
+            <div class="cols-sm-10">
+              <div class="input-group">
+                <p><input type=file name=file accept=".csv">
+              </div>
+            </div>
+
+            <label for="new_name" class="cols-sm-2 control-label">Tableau File Name</label>
+            <div class="cols-sm-10">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                <input type="text" class="form-control" name=new_name id="new_name" required placeholder="Enter Tableau Server Username" />
+              </div>
+            </div>
+
+            <label for="project_name" class="cols-sm-2 control-label">Tableau Project Name</label>
+            <div class="cols-sm-10">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                <input type="text" class="form-control" name=project_name id="project_name" require placeholder="Enter Project Name" />
+              </div>
+            </div>
+
+
+            <button type="submit" class="btn btn-primary btn-lg btn-block login-button">Convert and Upload</button>
+
+          </form>
+        </div>
+      </div>
+</div>
+{% endblock %}
