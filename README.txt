@@ -9,10 +9,14 @@ The extract-upload.py is created by Ryan Robitialle.
 
 Prerequisite
   - Python 2.7
+  - Tabcmd 10.4 (You can get it here https://www.tableau.com/support/releases/server/10.4 )  (Or any version that you Server use)
 
 Installation
-  1. Make sure you have Python 2.7 install correctly (This can be check by running python --version or python in CMD)
-  2. Install virtualenv library from python -> pip install virtualenv
+  1. Make sure you have Python 2.7 install correctly (This can be check by running python --version in CMD)\
+  1. Make sure you have Tabcmd installed correctly (This can be check by running tabcmd in CMD)
+	**NOTE If you don't want to use virtualenv to control your environment variable you can skip to Step 5 **
+  2. Install virtualenv library from python -> pip install virtualenv  
+  3. Create virtualenv by open Command Line in -> virtualenv env
   3. Activate virtualenv by open Command Line in /env/Script folder then input the command -> activate
   4. Navigate back to the first folder of the program (cd ../..)
   5. Install other dependency by typing this command to Command Line -> pip install -r requirement

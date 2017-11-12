@@ -1316,3 +1316,367 @@
 2017-11-06 13:27:31.996 (19488): tdeserver: closing connection, connection=tab.pipe://./pipe/{5F91158F-EB17-4383-9DB5-773C02C5FEF0}
 2017-11-06 13:27:31.996 (19488): endthread: recv, connection=tab.pipe://./pipe/{5F91158F-EB17-4383-9DB5-773C02C5FEF0}
 2017-11-06 13:27:31.996 (14888): tdeserver: exit (0)
+2017-11-07 13:36:47.207 (21752): -----------------------------------------------------------------------------
+2017-11-07 13:36:47.207 (21752): Initializing fault reporting
+2017-11-07 13:36:47.208 (21752): Fault reporting log pathname: C:\Users\USER\Desktop\Stelligence Intern\tableau-uploader\web-app\tdeserver64-error000038f8.log
+2017-11-07 13:36:47.208 (21752): Initializing MiniDump
+2017-11-07 13:36:47.208 (21752): Loading 'DbgHelp.dll'
+2017-11-07 13:36:47.208 (21752): Loaded 'C:\Windows\SYSTEM32\DbgHelp.dll'
+2017-11-07 13:36:47.208 (21752):   Product Name: Microsoft® Windows® Operating System
+2017-11-07 13:36:47.208 (21752):   File Version: 10.0.14321.1024 (rs1_release.160715-1616)
+2017-11-07 13:36:47.208 (21752):   Product Version: 10.0.14321.1024
+2017-11-07 13:36:47.209 (21752): Finding function 'MiniDumpWriteDump'
+2017-11-07 13:36:47.209 (21752): Success
+2017-11-07 13:36:47.209 (21752): Registering unhandled exception filter
+2017-11-07 13:36:47.209 (21752): -----------------------------------------------------------------------------
+2017-11-07 13:36:47.209 (21752): Machine Configuration
+2017-11-07 13:36:47.209 (21752):   Max Descriptors: -1
+2017-11-07 13:36:47.210 (21752): tdeserver: server listening for incoming connections at: tab.pipe://./pipe/{6AB1A547-5555-4F5D-9386-902E68FB2C88}
+2017-11-07 13:36:47.210 (21752): tdeserver: accepting new connection
+2017-11-07 13:36:47.210 (21752): tdeserver: new connection, connection=tab.pipe://./pipe/{6AB1A547-5555-4F5D-9386-902E68FB2C88}
+2017-11-07 13:36:47.210 (21784): beginthread: send, connection=tab.pipe://./pipe/{6AB1A547-5555-4F5D-9386-902E68FB2C88}
+2017-11-07 13:36:47.210 (14936): beginthread: recv, connection=tab.pipe://./pipe/{6AB1A547-5555-4F5D-9386-902E68FB2C88}
+2017-11-07 13:36:47.211 (14936): tdeserver: open session, connection=tab.pipe://./pipe/{6AB1A547-5555-4F5D-9386-902E68FB2C88}, sess_guid=1
+2017-11-07 13:36:47.211 (3764): Session1: QueryExecute:
+2017-11-07 13:36:47.211 (3764): (create database "C:\\Users\\USER\\Desktop\\Stelligence Intern\\tableau-uploader\\web-app\\conversionRates.tde")
+2017-11-07 13:36:51.181 (3764): Session1: QueryExecute: OK
+2017-11-07 13:36:51.181 (13112): Session1: QueryExecute:
+2017-11-07 13:36:51.181 (13112): (create schema [Extract])
+2017-11-07 13:36:51.227 (13112): Session1: QueryExecute: OK
+2017-11-07 13:36:51.227 (16256): Session1: QueryExecute:
+2017-11-07 13:36:51.227 (16256): (create table [Extract].[Extract])
+2017-11-07 13:36:51.290 (16256): Session1: QueryExecute: OK
+2017-11-07 13:36:51.291 (14008): Session1: QueryExecute:
+2017-11-07 13:36:51.291 (14008): (create column [Extract].[Extract].[col1] ( ( "builtin" "bigint" ) ( "factory" "builtin" ) ( "ordinal" "0" ) ))
+2017-11-07 13:36:51.405 (14008): Session1: QueryExecute: OK
+2017-11-07 13:36:51.405 (3764): Session1: QueryExecute:
+2017-11-07 13:36:51.405 (3764): (create column [Extract].[Extract].[originCountry] ( ( "collation" "binary" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "1" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2017-11-07 13:36:51.490 (3764): Session1: QueryExecute: OK
+2017-11-07 13:36:51.491 (13112): Session1: QueryExecute:
+2017-11-07 13:36:51.491 (13112): (create column [Extract].[Extract].[exchangeRate] ( ( "builtin" "bigint" ) ( "factory" "builtin" ) ( "ordinal" "2" ) ))
+2017-11-07 13:36:51.563 (13112): Session1: QueryExecute: OK
+2017-11-07 13:36:51.570 (16256): Session1: InsertOpen: table="Extract schema="Extract"
+2017-11-07 13:36:51.570 (16256):   column[0]="col1"
+2017-11-07 13:36:51.570 (16256):   column[1]="originCountry"
+2017-11-07 13:36:51.570 (16256):   column[2]="exchangeRate"
+2017-11-07 13:36:51.571 (3764): Session1: InsertCommit: insert_guid=1
+2017-11-07 13:36:51.734 (3764): Session1: InsertCommit: OK
+2017-11-07 13:36:51.734 (13112): Session1: InsertClose: insert_guid=1
+2017-11-07 13:36:51.734 (13112): Session1: InsertClose: OK
+2017-11-07 13:36:51.734 (16256): Session1: QueryExecute:
+2017-11-07 13:36:51.734 (16256): (package)
+2017-11-07 13:36:51.734 (16256): PackageDatabase: in-place package of "C:\Users\USER\Desktop\Stelligence Intern\tableau-uploader\web-app\conversionRates.tde"
+2017-11-07 13:36:51.807 (16256): PackageDatabase: finished
+2017-11-07 13:36:51.807 (16256): Session1: QueryExecute: OK
+2017-11-07 13:36:51.807 (14008): Session1: QueryExecute:
+2017-11-07 13:36:51.807 (14008): (database "C:\\Users\\USER\\Desktop\\Stelligence Intern\\tableau-uploader\\web-app\\conversionRates.tde")
+2017-11-07 13:36:51.808 (14008): Session1: QueryExecute: OK
+2017-11-07 13:36:51.808 (3764): Session1: QueryExecute:
+2017-11-07 13:36:51.808 (3764): (show schemas)
+2017-11-07 13:36:51.809 (3764): Elapsed time:0.001 sec
+2017-11-07 13:36:51.809 (3764): Compilation time:0.000 sec
+2017-11-07 13:36:51.809 (3764): Execution time:0.001 sec
+2017-11-07 13:36:51.809 (3764): Session1: QueryExecute: OK rowset_guid=2 n_columns=1
+2017-11-07 13:36:51.809 (3764): Session1: QueryExecute:
+2017-11-07 13:36:51.809 (3764): (show tables [Extract])
+2017-11-07 13:36:51.811 (3764): Elapsed time:0.002 sec
+2017-11-07 13:36:51.811 (3764): Compilation time:0.000 sec
+2017-11-07 13:36:51.811 (3764): Execution time:0.002 sec
+2017-11-07 13:36:51.811 (3764): Session1: QueryExecute: OK rowset_guid=3 n_columns=1
+2017-11-07 13:36:51.812 (3764): Session1: QueryExecute:
+2017-11-07 13:36:51.812 (3764): (top (table [Extract].[Extract]) () 0)
+2017-11-07 13:36:51.835 (3764): Elapsed time:0.023 sec
+2017-11-07 13:36:51.835 (3764): Compilation time:0.014 sec
+2017-11-07 13:36:51.835 (3764): Execution time:0.009 sec
+2017-11-07 13:36:51.835 (3764): Session1: QueryExecute: OK rowset_guid=4 n_columns=3
+2017-11-07 13:36:51.836 (16256): Session1: QueryExecute:
+2017-11-07 13:36:51.836 (16256): (alter column [Extract].[Extract].[col1] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2017-11-07 13:36:51.872 (16256): Session1: QueryExecute: OK
+2017-11-07 13:36:51.873 (14008): Session1: QueryExecute:
+2017-11-07 13:36:51.873 (14008): (alter column [Extract].[Extract].[originCountry] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2017-11-07 13:36:51.931 (14008): Session1: QueryExecute: OK
+2017-11-07 13:36:51.931 (3764): Session1: QueryExecute:
+2017-11-07 13:36:51.931 (3764): (alter column [Extract].[Extract].[exchangeRate] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2017-11-07 13:36:51.979 (3764): Session1: QueryExecute: OK
+2017-11-07 13:36:51.979 (13112): Session1: QueryExecute:
+2017-11-07 13:36:51.979 (13112): (top (table [Extract].[Extract]) () 0)
+2017-11-07 13:36:51.982 (13112): Elapsed time:0.003 sec
+2017-11-07 13:36:51.982 (13112): Compilation time:0.001 sec
+2017-11-07 13:36:51.982 (13112): Execution time:0.003 sec
+2017-11-07 13:36:51.983 (13112): Session1: QueryExecute: OK rowset_guid=5 n_columns=3
+2017-11-07 13:36:51.983 (14008): Session1: QueryExecute:
+2017-11-07 13:36:51.983 (14008): (sort [Extract].[Extract] ( ( [exchangeRate] asc) ( [col1] asc) ( [originCountry] asc) ) )
+2017-11-07 13:36:52.138 (14008): Session1: QueryExecute: OK
+2017-11-07 13:36:52.138 (3764): Session1: QueryExecute:
+2017-11-07 13:36:52.138 (3764): (package)
+2017-11-07 13:36:52.138 (3764): PackageDatabase: in-place package of "C:\Users\USER\Desktop\Stelligence Intern\tableau-uploader\web-app\conversionRates.tde"
+2017-11-07 13:36:52.191 (3764): PackageDatabase: finished
+2017-11-07 13:36:52.191 (3764): Session1: QueryExecute: OK
+2017-11-07 13:36:52.191 (14936): tdeserver: close session, connection=tab.pipe://./pipe/{6AB1A547-5555-4F5D-9386-902E68FB2C88}, sess_guid=1
+2017-11-07 13:36:52.191 (21752): tdeserver: exit (0)
+2017-11-07 13:42:18.630 (10088): -----------------------------------------------------------------------------
+2017-11-07 13:42:18.630 (10088): Initializing fault reporting
+2017-11-07 13:42:18.630 (10088): Fault reporting log pathname: C:\Users\USER\Desktop\Stelligence Intern\tableau-uploader\web-app\tdeserver64-error0000395c.log
+2017-11-07 13:42:18.630 (10088): Initializing MiniDump
+2017-11-07 13:42:18.630 (10088): Loading 'DbgHelp.dll'
+2017-11-07 13:42:18.631 (10088): Loaded 'C:\Windows\SYSTEM32\DbgHelp.dll'
+2017-11-07 13:42:18.631 (10088):   Product Name: Microsoft® Windows® Operating System
+2017-11-07 13:42:18.631 (10088):   File Version: 10.0.14321.1024 (rs1_release.160715-1616)
+2017-11-07 13:42:18.631 (10088):   Product Version: 10.0.14321.1024
+2017-11-07 13:42:18.632 (10088): Finding function 'MiniDumpWriteDump'
+2017-11-07 13:42:18.632 (10088): Success
+2017-11-07 13:42:18.632 (10088): Registering unhandled exception filter
+2017-11-07 13:42:18.633 (10088): -----------------------------------------------------------------------------
+2017-11-07 13:42:18.633 (10088): Machine Configuration
+2017-11-07 13:42:18.633 (10088):   Max Descriptors: -1
+2017-11-07 13:42:18.633 (10088): tdeserver: server listening for incoming connections at: tab.pipe://./pipe/{087C2EE8-EC35-4C72-97C5-90421DF40F2F}
+2017-11-07 13:42:18.633 (10088): tdeserver: accepting new connection
+2017-11-07 13:42:18.633 (10088): tdeserver: new connection, connection=tab.pipe://./pipe/{087C2EE8-EC35-4C72-97C5-90421DF40F2F}
+2017-11-07 13:42:18.633 (21840): beginthread: send, connection=tab.pipe://./pipe/{087C2EE8-EC35-4C72-97C5-90421DF40F2F}
+2017-11-07 13:42:18.633 (22640): beginthread: recv, connection=tab.pipe://./pipe/{087C2EE8-EC35-4C72-97C5-90421DF40F2F}
+2017-11-07 13:42:18.634 (22640): tdeserver: open session, connection=tab.pipe://./pipe/{087C2EE8-EC35-4C72-97C5-90421DF40F2F}, sess_guid=1
+2017-11-07 13:42:18.634 (19372): Session1: QueryExecute:
+2017-11-07 13:42:18.634 (19372): (create database "C:\\Users\\USER\\Desktop\\Stelligence Intern\\tableau-uploader\\web-app\\urbandict-word-def.tde")
+2017-11-07 13:42:20.502 (19372): Session1: QueryExecute: OK
+2017-11-07 13:42:20.620 (7832): Session1: QueryExecute:
+2017-11-07 13:42:20.620 (7832): (create schema [Extract])
+2017-11-07 13:42:20.667 (7832): Session1: QueryExecute: OK
+2017-11-07 13:42:20.668 (19096): Session1: QueryExecute:
+2017-11-07 13:42:20.668 (19096): (create table [Extract].[Extract])
+2017-11-07 13:42:20.727 (19096): Session1: QueryExecute: OK
+2017-11-07 13:42:20.727 (20652): Session1: QueryExecute:
+2017-11-07 13:42:20.727 (20652): (create column [Extract].[Extract].[word_id] ( ( "builtin" "bigint" ) ( "factory" "builtin" ) ( "ordinal" "0" ) ))
+2017-11-07 13:42:20.882 (20652): Session1: QueryExecute: OK
+2017-11-07 13:42:20.883 (19372): Session1: QueryExecute:
+2017-11-07 13:42:20.883 (19372): (create column [Extract].[Extract].[word] ( ( "collation" "binary" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "1" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2017-11-07 13:42:21.190 (19372): Session1: QueryExecute: OK
+2017-11-07 13:42:21.190 (7832): Session1: QueryExecute:
+2017-11-07 13:42:21.190 (7832): (create column [Extract].[Extract].[up_votes] ( ( "builtin" "bigint" ) ( "factory" "builtin" ) ( "ordinal" "2" ) ))
+2017-11-07 13:42:21.280 (7832): Session1: QueryExecute: OK
+2017-11-07 13:42:21.281 (19096): Session1: QueryExecute:
+2017-11-07 13:42:21.281 (19096): (create column [Extract].[Extract].[down_votes] ( ( "builtin" "bigint" ) ( "factory" "builtin" ) ( "ordinal" "3" ) ))
+2017-11-07 13:42:21.371 (19096): Session1: QueryExecute: OK
+2017-11-07 13:42:21.371 (20652): Session1: QueryExecute:
+2017-11-07 13:42:21.371 (20652): (create column [Extract].[Extract].[definition] ( ( "collation" "binary" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "4" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2017-11-07 13:42:21.444 (20652): Session1: QueryExecute: OK
+2017-11-07 13:42:21.467 (19372): Session1: InsertOpen: table="Extract schema="Extract"
+2017-11-07 13:42:21.467 (19372):   column[0]="word_id"
+2017-11-07 13:42:21.467 (19372):   column[1]="word"
+2017-11-07 13:42:21.467 (19372):   column[2]="up_votes"
+2017-11-07 13:42:21.467 (19372):   column[3]="down_votes"
+2017-11-07 13:42:21.467 (19372):   column[4]="definition"
+2017-11-07 13:42:22.090 (19372): Session1: InsertCommit: insert_guid=1
+2017-11-07 13:42:22.346 (19372): Session1: InsertCommit: OK
+2017-11-07 13:42:22.346 (7832): Session1: InsertClose: insert_guid=1
+2017-11-07 13:42:22.346 (7832): Session1: InsertClose: OK
+2017-11-07 13:42:22.347 (19096): Session1: QueryExecute:
+2017-11-07 13:42:22.347 (19096): (package)
+2017-11-07 13:42:22.347 (19096): PackageDatabase: in-place package of "C:\Users\USER\Desktop\Stelligence Intern\tableau-uploader\web-app\urbandict-word-def.tde"
+2017-11-07 13:42:22.421 (19096): PackageDatabase: finished
+2017-11-07 13:42:22.421 (19096): Session1: QueryExecute: OK
+2017-11-07 13:42:22.421 (20652): Session1: QueryExecute:
+2017-11-07 13:42:22.421 (20652): (database "C:\\Users\\USER\\Desktop\\Stelligence Intern\\tableau-uploader\\web-app\\urbandict-word-def.tde")
+2017-11-07 13:42:22.421 (20652): Session1: QueryExecute: OK
+2017-11-07 13:42:22.422 (19372): Session1: QueryExecute:
+2017-11-07 13:42:22.422 (19372): (show schemas)
+2017-11-07 13:42:22.422 (19372): Elapsed time:0.001 sec
+2017-11-07 13:42:22.422 (19372): Compilation time:0.000 sec
+2017-11-07 13:42:22.422 (19372): Execution time:0.001 sec
+2017-11-07 13:42:22.423 (19372): Session1: QueryExecute: OK rowset_guid=2 n_columns=1
+2017-11-07 13:42:22.423 (19372): Session1: QueryExecute:
+2017-11-07 13:42:22.423 (19372): (show tables [Extract])
+2017-11-07 13:42:22.424 (19372): Elapsed time:0.001 sec
+2017-11-07 13:42:22.424 (19372): Compilation time:0.000 sec
+2017-11-07 13:42:22.424 (19372): Execution time:0.001 sec
+2017-11-07 13:42:22.424 (19372): Session1: QueryExecute: OK rowset_guid=3 n_columns=1
+2017-11-07 13:42:22.425 (19372): Session1: QueryExecute:
+2017-11-07 13:42:22.425 (19372): (top (table [Extract].[Extract]) () 0)
+2017-11-07 13:42:22.449 (19372): Elapsed time:0.025 sec
+2017-11-07 13:42:22.449 (19372): Compilation time:0.016 sec
+2017-11-07 13:42:22.449 (19372): Execution time:0.008 sec
+2017-11-07 13:42:22.449 (19372): Session1: QueryExecute: OK rowset_guid=4 n_columns=5
+2017-11-07 13:42:22.450 (19096): Session1: QueryExecute:
+2017-11-07 13:42:22.450 (19096): (alter column [Extract].[Extract].[word_id] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2017-11-07 13:42:22.490 (19096): Session1: QueryExecute: OK
+2017-11-07 13:42:22.490 (20652): Session1: QueryExecute:
+2017-11-07 13:42:22.490 (20652): (alter column [Extract].[Extract].[word] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2017-11-07 13:42:22.561 (20652): Session1: QueryExecute: OK
+2017-11-07 13:42:22.561 (19372): Session1: QueryExecute:
+2017-11-07 13:42:22.561 (19372): (alter column [Extract].[Extract].[up_votes] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2017-11-07 13:42:22.651 (19372): Session1: QueryExecute: OK
+2017-11-07 13:42:22.651 (7832): Session1: QueryExecute:
+2017-11-07 13:42:22.651 (7832): (alter column [Extract].[Extract].[down_votes] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2017-11-07 13:42:22.717 (7832): Session1: QueryExecute: OK
+2017-11-07 13:42:22.718 (19096): Session1: QueryExecute:
+2017-11-07 13:42:22.718 (19096): (alter column [Extract].[Extract].[definition] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2017-11-07 13:42:22.791 (19096): Session1: QueryExecute: OK
+2017-11-07 13:42:22.791 (20652): Session1: QueryExecute:
+2017-11-07 13:42:22.791 (20652): (top (table [Extract].[Extract]) () 0)
+2017-11-07 13:42:22.796 (20652): Elapsed time:0.004 sec
+2017-11-07 13:42:22.796 (20652): Compilation time:0.001 sec
+2017-11-07 13:42:22.796 (20652): Execution time:0.003 sec
+2017-11-07 13:42:22.796 (20652): Session1: QueryExecute: OK rowset_guid=5 n_columns=5
+2017-11-07 13:42:22.797 (7832): Session1: QueryExecute:
+2017-11-07 13:42:22.797 (7832): (sort [Extract].[Extract] ( ( [down_votes] asc) ( [up_votes] asc) ( [word] asc) ( [definition] asc) ( [word_id] asc) ) )
+2017-11-07 13:42:23.065 (7832): Session1: QueryExecute: OK
+2017-11-07 13:42:23.065 (19096): Session1: QueryExecute:
+2017-11-07 13:42:23.065 (19096): (package)
+2017-11-07 13:42:23.065 (19096): PackageDatabase: in-place package of "C:\Users\USER\Desktop\Stelligence Intern\tableau-uploader\web-app\urbandict-word-def.tde"
+2017-11-07 13:42:23.103 (19096): PackageDatabase: finished
+2017-11-07 13:42:23.103 (19096): Session1: QueryExecute: OK
+2017-11-07 13:42:23.103 (22640): tdeserver: close session, connection=tab.pipe://./pipe/{087C2EE8-EC35-4C72-97C5-90421DF40F2F}, sess_guid=1
+2017-11-07 13:42:23.103 (10088): tdeserver: exit (0)
+2017-11-10 17:06:02.848 (13784): -----------------------------------------------------------------------------
+2017-11-10 17:06:02.848 (13784): Initializing fault reporting
+2017-11-10 17:06:02.849 (13784): Fault reporting log pathname: C:\Users\USER\Desktop\Stelligence Intern\tableau-uploader\web-app\tdeserver64-error000034ec.log
+2017-11-10 17:06:02.849 (13784): Initializing MiniDump
+2017-11-10 17:06:02.849 (13784): Loading 'DbgHelp.dll'
+2017-11-10 17:06:02.849 (13784): Loaded 'C:\Windows\SYSTEM32\DbgHelp.dll'
+2017-11-10 17:06:02.849 (13784):   Product Name: Microsoft® Windows® Operating System
+2017-11-10 17:06:02.849 (13784):   File Version: 10.0.14321.1024 (rs1_release.160715-1616)
+2017-11-10 17:06:02.849 (13784):   Product Version: 10.0.14321.1024
+2017-11-10 17:06:02.850 (13784): Finding function 'MiniDumpWriteDump'
+2017-11-10 17:06:02.850 (13784): Success
+2017-11-10 17:06:02.850 (13784): Registering unhandled exception filter
+2017-11-10 17:06:02.850 (13784): -----------------------------------------------------------------------------
+2017-11-10 17:06:02.850 (13784): Machine Configuration
+2017-11-10 17:06:02.850 (13784):   Max Descriptors: -1
+2017-11-10 17:06:02.851 (13784): tdeserver: server listening for incoming connections at: tab.pipe://./pipe/{4075F85D-0780-4367-B179-706F108F2A57}
+2017-11-10 17:06:02.851 (13784): tdeserver: accepting new connection
+2017-11-10 17:06:02.851 (13784): tdeserver: new connection, connection=tab.pipe://./pipe/{4075F85D-0780-4367-B179-706F108F2A57}
+2017-11-10 17:06:02.851 (10732): beginthread: recv, connection=tab.pipe://./pipe/{4075F85D-0780-4367-B179-706F108F2A57}
+2017-11-10 17:06:02.851 (14808): beginthread: send, connection=tab.pipe://./pipe/{4075F85D-0780-4367-B179-706F108F2A57}
+2017-11-10 17:06:02.852 (10732): tdeserver: open session, connection=tab.pipe://./pipe/{4075F85D-0780-4367-B179-706F108F2A57}, sess_guid=1
+2017-11-10 17:06:02.852 (10336): Session1: QueryExecute:
+2017-11-10 17:06:02.852 (10336): (create database "C:\\Users\\USER\\Desktop\\Stelligence Intern\\tableau-uploader\\web-app\\titanic_test.tde")
+2017-11-10 17:06:05.206 (10336): Session1: QueryExecute: OK
+2017-11-10 17:06:05.206 (19656): Session1: QueryExecute:
+2017-11-10 17:06:05.206 (19656): (create schema [Extract])
+2017-11-10 17:06:05.241 (19656): Session1: QueryExecute: OK
+2017-11-10 17:06:05.241 (5940): Session1: QueryExecute:
+2017-11-10 17:06:05.241 (5940): (create table [Extract].[Extract])
+2017-11-10 17:06:05.287 (5940): Session1: QueryExecute: OK
+2017-11-10 17:06:05.288 (19000): Session1: QueryExecute:
+2017-11-10 17:06:05.288 (19000): (create column [Extract].[Extract].[PassengerId] ( ( "builtin" "bigint" ) ( "factory" "builtin" ) ( "ordinal" "0" ) ))
+2017-11-10 17:06:05.399 (19000): Session1: QueryExecute: OK
+2017-11-10 17:06:05.400 (10336): Session1: QueryExecute:
+2017-11-10 17:06:05.400 (10336): (create column [Extract].[Extract].[Pclass] ( ( "builtin" "bigint" ) ( "factory" "builtin" ) ( "ordinal" "1" ) ))
+2017-11-10 17:06:05.469 (10336): Session1: QueryExecute: OK
+2017-11-10 17:06:05.469 (19656): Session1: QueryExecute:
+2017-11-10 17:06:05.469 (19656): (create column [Extract].[Extract].[Name] ( ( "collation" "binary" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "2" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2017-11-10 17:06:05.541 (19656): Session1: QueryExecute: OK
+2017-11-10 17:06:05.541 (5940): Session1: QueryExecute:
+2017-11-10 17:06:05.541 (5940): (create column [Extract].[Extract].[Sex] ( ( "collation" "binary" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "3" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2017-11-10 17:06:05.609 (5940): Session1: QueryExecute: OK
+2017-11-10 17:06:05.610 (19000): Session1: QueryExecute:
+2017-11-10 17:06:05.610 (19000): (create column [Extract].[Extract].[Age] ( ( "builtin" "double" ) ( "factory" "builtin" ) ( "ordinal" "4" ) ))
+2017-11-10 17:06:05.682 (19000): Session1: QueryExecute: OK
+2017-11-10 17:06:05.682 (10336): Session1: QueryExecute:
+2017-11-10 17:06:05.682 (10336): (create column [Extract].[Extract].[SibSp] ( ( "builtin" "bigint" ) ( "factory" "builtin" ) ( "ordinal" "5" ) ))
+2017-11-10 17:06:05.752 (10336): Session1: QueryExecute: OK
+2017-11-10 17:06:05.753 (19656): Session1: QueryExecute:
+2017-11-10 17:06:05.753 (19656): (create column [Extract].[Extract].[Parch] ( ( "builtin" "bigint" ) ( "factory" "builtin" ) ( "ordinal" "6" ) ))
+2017-11-10 17:06:05.819 (19656): Session1: QueryExecute: OK
+2017-11-10 17:06:05.819 (5940): Session1: QueryExecute:
+2017-11-10 17:06:05.819 (5940): (create column [Extract].[Extract].[Ticket] ( ( "builtin" "bigint" ) ( "factory" "builtin" ) ( "ordinal" "7" ) ))
+2017-11-10 17:06:05.892 (5940): Session1: QueryExecute: OK
+2017-11-10 17:06:05.892 (19000): Session1: QueryExecute:
+2017-11-10 17:06:05.892 (19000): (create column [Extract].[Extract].[Fare] ( ( "builtin" "double" ) ( "factory" "builtin" ) ( "ordinal" "8" ) ))
+2017-11-10 17:06:05.970 (19000): Session1: QueryExecute: OK
+2017-11-10 17:06:05.970 (10336): Session1: QueryExecute:
+2017-11-10 17:06:05.970 (10336): (create column [Extract].[Extract].[Cabin] ( ( "collation" "binary" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "9" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2017-11-10 17:06:06.047 (10336): Session1: QueryExecute: OK
+2017-11-10 17:06:06.047 (19656): Session1: QueryExecute:
+2017-11-10 17:06:06.047 (19656): (create column [Extract].[Extract].[Embarked] ( ( "collation" "binary" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "10" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2017-11-10 17:06:06.115 (19656): Session1: QueryExecute: OK
+2017-11-10 17:06:06.144 (5940): Session1: InsertOpen: table="Extract schema="Extract"
+2017-11-10 17:06:06.144 (5940):   column[0]="PassengerId"
+2017-11-10 17:06:06.144 (5940):   column[1]="Pclass"
+2017-11-10 17:06:06.144 (5940):   column[2]="Name"
+2017-11-10 17:06:06.144 (5940):   column[3]="Sex"
+2017-11-10 17:06:06.144 (5940):   column[4]="Age"
+2017-11-10 17:06:06.144 (5940):   column[5]="SibSp"
+2017-11-10 17:06:06.144 (5940):   column[6]="Parch"
+2017-11-10 17:06:06.144 (5940):   column[7]="Ticket"
+2017-11-10 17:06:06.144 (5940):   column[8]="Fare"
+2017-11-10 17:06:06.144 (5940):   column[9]="Cabin"
+2017-11-10 17:06:06.144 (5940):   column[10]="Embarked"
+2017-11-10 17:06:06.145 (10336): Session1: InsertCommit: insert_guid=1
+2017-11-10 17:06:06.978 (10336): Session1: InsertCommit: OK
+2017-11-10 17:06:06.979 (19656): Session1: InsertClose: insert_guid=1
+2017-11-10 17:06:06.979 (19656): Session1: InsertClose: OK
+2017-11-10 17:06:06.980 (5940): Session1: QueryExecute:
+2017-11-10 17:06:06.980 (5940): (package)
+2017-11-10 17:06:06.980 (5940): PackageDatabase: in-place package of "C:\Users\USER\Desktop\Stelligence Intern\tableau-uploader\web-app\titanic_test.tde"
+2017-11-10 17:06:07.056 (5940): PackageDatabase: finished
+2017-11-10 17:06:07.056 (5940): Session1: QueryExecute: OK
+2017-11-10 17:06:07.056 (19000): Session1: QueryExecute:
+2017-11-10 17:06:07.056 (19000): (database "C:\\Users\\USER\\Desktop\\Stelligence Intern\\tableau-uploader\\web-app\\titanic_test.tde")
+2017-11-10 17:06:07.057 (19000): Session1: QueryExecute: OK
+2017-11-10 17:06:07.057 (10336): Session1: QueryExecute:
+2017-11-10 17:06:07.057 (10336): (show schemas)
+2017-11-10 17:06:07.058 (10336): Elapsed time:0.001 sec
+2017-11-10 17:06:07.058 (10336): Compilation time:0.000 sec
+2017-11-10 17:06:07.058 (10336): Execution time:0.001 sec
+2017-11-10 17:06:07.058 (10336): Session1: QueryExecute: OK rowset_guid=2 n_columns=1
+2017-11-10 17:06:07.058 (10336): Session1: QueryExecute:
+2017-11-10 17:06:07.058 (10336): (show tables [Extract])
+2017-11-10 17:06:07.060 (10336): Elapsed time:0.002 sec
+2017-11-10 17:06:07.060 (10336): Compilation time:0.000 sec
+2017-11-10 17:06:07.060 (10336): Execution time:0.002 sec
+2017-11-10 17:06:07.060 (10336): Session1: QueryExecute: OK rowset_guid=3 n_columns=1
+2017-11-10 17:06:07.061 (10336): Session1: QueryExecute:
+2017-11-10 17:06:07.061 (10336): (top (table [Extract].[Extract]) () 0)
+2017-11-10 17:06:07.084 (10336): Elapsed time:0.024 sec
+2017-11-10 17:06:07.084 (10336): Compilation time:0.016 sec
+2017-11-10 17:06:07.084 (10336): Execution time:0.007 sec
+2017-11-10 17:06:07.085 (10336): Session1: QueryExecute: OK rowset_guid=4 n_columns=11
+2017-11-10 17:06:07.086 (5940): Session1: QueryExecute:
+2017-11-10 17:06:07.086 (5940): (alter column [Extract].[Extract].[PassengerId] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2017-11-10 17:06:07.121 (5940): Session1: QueryExecute: OK
+2017-11-10 17:06:07.121 (19000): Session1: QueryExecute:
+2017-11-10 17:06:07.121 (19000): (alter column [Extract].[Extract].[Pclass] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2017-11-10 17:06:07.171 (19000): Session1: QueryExecute: OK
+2017-11-10 17:06:07.171 (10336): Session1: QueryExecute:
+2017-11-10 17:06:07.171 (10336): (alter column [Extract].[Extract].[Name] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2017-11-10 17:06:07.224 (10336): Session1: QueryExecute: OK
+2017-11-10 17:06:07.225 (19656): Session1: QueryExecute:
+2017-11-10 17:06:07.225 (19656): (alter column [Extract].[Extract].[Sex] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2017-11-10 17:06:07.279 (19656): Session1: QueryExecute: OK
+2017-11-10 17:06:07.280 (5940): Session1: QueryExecute:
+2017-11-10 17:06:07.280 (5940): (alter column [Extract].[Extract].[Age] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2017-11-10 17:06:07.333 (5940): Session1: QueryExecute: OK
+2017-11-10 17:06:07.333 (19000): Session1: QueryExecute:
+2017-11-10 17:06:07.333 (19000): (alter column [Extract].[Extract].[SibSp] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2017-11-10 17:06:07.378 (19000): Session1: QueryExecute: OK
+2017-11-10 17:06:07.379 (10336): Session1: QueryExecute:
+2017-11-10 17:06:07.379 (10336): (alter column [Extract].[Extract].[Parch] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2017-11-10 17:06:07.426 (10336): Session1: QueryExecute: OK
+2017-11-10 17:06:07.427 (19656): Session1: QueryExecute:
+2017-11-10 17:06:07.427 (19656): (alter column [Extract].[Extract].[Ticket] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2017-11-10 17:06:07.467 (19656): Session1: QueryExecute: OK
+2017-11-10 17:06:07.467 (5940): Session1: QueryExecute:
+2017-11-10 17:06:07.467 (5940): (alter column [Extract].[Extract].[Fare] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2017-11-10 17:06:07.514 (5940): Session1: QueryExecute: OK
+2017-11-10 17:06:07.514 (19000): Session1: QueryExecute:
+2017-11-10 17:06:07.514 (19000): (alter column [Extract].[Extract].[Cabin] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2017-11-10 17:06:07.569 (19000): Session1: QueryExecute: OK
+2017-11-10 17:06:07.570 (10336): Session1: QueryExecute:
+2017-11-10 17:06:07.570 (10336): (alter column [Extract].[Extract].[Embarked] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2017-11-10 17:06:07.624 (10336): Session1: QueryExecute: OK
+2017-11-10 17:06:07.624 (19656): Session1: QueryExecute:
+2017-11-10 17:06:07.624 (19656): (top (table [Extract].[Extract]) () 0)
+2017-11-10 17:06:07.629 (19656): Elapsed time:0.005 sec
+2017-11-10 17:06:07.629 (19656): Compilation time:0.002 sec
+2017-11-10 17:06:07.629 (19656): Execution time:0.003 sec
+2017-11-10 17:06:07.630 (19656): Session1: QueryExecute: OK rowset_guid=5 n_columns=11
+2017-11-10 17:06:07.631 (19000): Session1: QueryExecute:
+2017-11-10 17:06:07.631 (19000): (sort [Extract].[Extract] ( ( [Sex] asc) ( [Pclass] asc) ( [Embarked] asc) ( [SibSp] asc) ( [Parch] asc) ( [Cabin] asc) ( [Ticket] asc) ( [PassengerId] asc) ( [Name] asc) ) )
+2017-11-10 17:06:08.153 (19000): Session1: QueryExecute: OK
+2017-11-10 17:06:08.153 (10336): Session1: QueryExecute:
+2017-11-10 17:06:08.153 (10336): (package)
+2017-11-10 17:06:08.153 (10336): PackageDatabase: in-place package of "C:\Users\USER\Desktop\Stelligence Intern\tableau-uploader\web-app\titanic_test.tde"
+2017-11-10 17:06:08.199 (10336): PackageDatabase: finished
+2017-11-10 17:06:08.199 (10336): Session1: QueryExecute: OK
+2017-11-10 17:06:08.199 (10732): tdeserver: close session, connection=tab.pipe://./pipe/{4075F85D-0780-4367-B179-706F108F2A57}, sess_guid=1
+2017-11-10 17:06:08.199 (13784): tdeserver: exit (0)
